@@ -150,7 +150,8 @@ exports.clean = clean;
 const js = () => {
    return (
       gulp
-         .src("source/js/**.js")
+         // .src("source/js/**.js")
+         .src("source/js/!(vendor.js)*.js")
          .pipe(sourcemap.init())
          .pipe(babel())
          .pipe(uglify())
@@ -161,8 +162,18 @@ const js = () => {
    );
 };
 
-exports.js = js;
+const jsVendor = () => {
+   return (
+      gulp
+         .src("source/js/vendor.js")
+         .pipe(uglify())
+         .pipe(rename("vendor.min.js"))
+         .pipe(gulp.dest("build/js"))
+   );
+};
 
-exports.build = gulp.series(clean, copy, css, js, sprite, html);
+exports.jsVendor = jsVendor;
 
-exports.start = gulp.series(clean, copy, css, js, sprite, html, watch);
+exports.build = gulp.series(clean, copy, css, js, jsVendor, sprite, html);
+
+exports.start = gulp.series(clean, copy, css, js, jsVendor, sprite, html, watch);

@@ -1,11 +1,53 @@
-@mixin reset-list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
+@mixin montserrat-regular {
+   font-family: "Montserrat", "Arial", sans-serif;
+   font-style: normal;
+   font-weight: 400;
 }
 
-@mixin reset {
-  margin: 0;
-  padding: 0;
+@mixin montserrat-medium {
+   font-family: "Montserrat", "Arial", sans-serif;
+   font-style: normal;
+   font-weight: 500;
+}
+
+@mixin montserrat-semiBold {
+   font-family: "Montserrat", "Arial", sans-serif;
+   font-style: normal;
+   font-weight: 600;
+}
+
+@mixin montserrat-bold {
+   font-family: "Montserrat", "Arial", sans-serif;
+   font-style: normal;
+   font-weight: 700;
+}
+
+@mixin list-reset {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+@mixin buttton-reset {
+   padding: 0;
+   border: none;
+   background-color: transparent;
+}
+
+@mixin retina {
+   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      @content;
+   }
+}
+
+@mixin media-tablet {
+   @media (max-width: $tablet-width) {
+      @content;
+   }
+}
+
+@mixin media-mobile {
+   @media (max-width: $mobile-width) {
+      @content;
+   }
 }
