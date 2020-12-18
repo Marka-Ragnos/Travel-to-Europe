@@ -81,6 +81,9 @@ const images = () => {
          imagemin([
             imagemin.mozjpeg({ quality: 75, progressive: true }),
             imagemin.optipng({ optimizationLevel: 3 }),
+            // imagemin.svgo({
+            //    plugins: [{ removeViewBox: false }],
+            // }),
             imagemin.svgo(),
          ])
       )
@@ -163,17 +166,24 @@ const js = () => {
 };
 
 const jsVendor = () => {
-   return (
-      gulp
-         .src("source/js/vendor.js")
-         .pipe(uglify())
-         .pipe(rename("vendor.min.js"))
-         .pipe(gulp.dest("build/js"))
-   );
+   return gulp
+      .src("source/js/vendor.js")
+      .pipe(uglify())
+      .pipe(rename("vendor.min.js"))
+      .pipe(gulp.dest("build/js"));
 };
 
 exports.jsVendor = jsVendor;
 
 exports.build = gulp.series(clean, copy, css, js, jsVendor, sprite, html);
 
-exports.start = gulp.series(clean, copy, css, js, jsVendor, sprite, html, watch);
+exports.start = gulp.series(
+   clean,
+   copy,
+   css,
+   js,
+   jsVendor,
+   sprite,
+   html,
+   watch
+);

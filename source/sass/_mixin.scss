@@ -28,10 +28,20 @@
    padding: 0;
 }
 
+@mixin reset {
+   margin: 0;
+   padding: 0;
+}
+
 @mixin buttton-reset {
    padding: 0;
    border: none;
    background-color: transparent;
+}
+
+@mixin pseudo {
+   position: absolute;
+   content: "";
 }
 
 @mixin retina {
