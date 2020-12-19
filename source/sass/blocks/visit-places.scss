@@ -32,22 +32,27 @@
 }
 
 .visit-places__list {
-   display: inline-flex;
+   display: flex;
    flex-wrap: wrap;
    justify-content: center;
    @include list-reset;
    margin-bottom: -4px;
    margin-left: 18%;
-   margin-right: 18%;
+   margin-right: calc(18% - 60px);
 }
 
 .visit-places__item {
-   margin: 0 auto;
+   // margin: 0;
+   margin-right: 60px;
    display: flex;
    align-items: center;
    justify-content: center;
    margin-bottom: 100px;
    position: relative;
+
+   &:last-child {
+      margin-left: 120px;
+   }
 
    &:hover > .visit-places__item-ground,
    &:focus > .visit-places__item-ground {
@@ -64,10 +69,6 @@
    &:focus > .visit-places__link {
       display: block;
    }
-}
-
-.visit-places__item:nth {
-
 }
 
 .visit-places__image {
