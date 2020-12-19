@@ -1,0 +1,47 @@
+.intro {
+   min-height: 860px;
+   margin-bottom: 10.45%;
+   padding-top: 185px;
+   padding-right: 20px;
+   padding-bottom: 297px;
+   padding-left: 56.5%;
+   color: #ffffff;
+   background-image: url("../img/main-bg-desktop@1x.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   // background-position: top center;
+
+   @include retina {
+      background-image: url("../img/main-bg-desktop@2x.jpg");
+   }
+}
+.intro__title {
+   width: 412px;
+   @include reset;
+   margin-bottom: 29px;
+   font-weight: 600;
+   font-size: 55px;
+   line-height: 80px;
+   letter-spacing: -1.10667px;
+}
+
+.intro__description {
+   width: 376px;
+   @include reset;
+   margin-bottom: 33px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 27px;
+   letter-spacing: -0.466667px;
+}
+
+.intro__link {
+}
+
+.intro__link-name {
+   padding-right: 138px;
+   background-image: url("../img/down.svg");
+   background-size: 14px 14px;
+   background-repeat: no-repeat;
+   background-position: right center;
+}

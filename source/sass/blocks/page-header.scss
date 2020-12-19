@@ -1,0 +1,19 @@
+.page-header {
+   display: flex;
+   align-items: center;
+   max-width: $desktop-width-container;
+   min-height: 100px;
+   margin: 0 auto;
+   padding: 0 6px;
+}
+
+.page-header__toggle {
+   display: none;
+}
+
+.page-header__logo {
+}
+
+.page-header__nav {
+   display: flex;
+}

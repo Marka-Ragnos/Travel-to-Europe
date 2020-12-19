@@ -1,0 +1,95 @@
+.countries {
+   z-index: 1;
+   position: relative;
+   margin-bottom: 240px;
+   padding: 0 19.53%;
+
+   &::before {
+      z-index: -1;
+      @include pseudo;
+      width: 75%;
+      height: 1088px;
+      left: 12.5%;
+      top: 12%;
+      background-image: url("../img/map.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+.countries__buttons {
+}
+
+.countries__btn {
+}
+
+.countries__btn--active {
+}
+
+.countries__btn--greece {
+}
+
+.countries__btn--albany {
+}
+
+.countries__btn--macedonia {
+}
+
+.countries__btn--montenegro {
+}
+
+.countries__btn--croatia {
+}
+
+.countries__item {
+}
+
+.countries__item--active {
+}
+
+.countries__item--greece {
+}
+
+.countries__wrapper {
+}
+
+.countries__title {
+}
+
+.countries__text {
+}
+
+.countries__btn-buy {
+}
+
+.countries__image {
+}
+
+.countries__reviews {
+}
+
+.countries__reviews-title {
+}
+
+.countries__reviews-text {
+}
+
+.countries__author {
+}
+
+.countries__author-image {
+}
+
+.countries__author-name {
+}
+
+.countries__item--albany {
+}
+
+.countries__item--macedonia {
+}
+
+.countries__item--montenegrin {
+}
+
+.countries__item--croatia {
+}

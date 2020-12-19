@@ -1,0 +1,111 @@
+.visit-places {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.visit-places__title {
+   width: 360px;
+   @include reset;
+   margin-bottom: 32px;
+   padding-bottom: 34px;
+   margin-left: 19.65%;
+   font-weight: 600;
+   font-size: 55px;
+   line-height: 80px;
+   letter-spacing: -1.245px;
+   color: $text;
+   background-image: url("../img/places-divider.svg");
+   background-repeat: no-repeat;
+   background-position: left bottom;
+}
+
+.visit-places__description {
+   width: 330px;
+   @include reset;
+   margin-bottom: 54px;
+   margin-left: 19.65%;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+   letter-spacing: -0.466667px;
+   color: rgba(44, 46, 63, 0.7);
+}
+
+.visit-places__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   @include list-reset;
+   margin-bottom: -4px;
+   margin-left: 18%;
+   margin-right: calc(18% - 60px);
+}
+
+.visit-places__item {
+   // margin: 0;
+   margin-right: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 100px;
+   position: relative;
+
+   &:last-child {
+      margin-left: 120px;
+   }
+
+   &:hover > .visit-places__item-ground,
+   &:focus > .visit-places__item-ground {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 21, 23, 0.6);
+   }
+
+   &:hover > .visit-places__link,
+   &:focus > .visit-places__link {
+      display: block;
+   }
+}
+
+.visit-places__image {
+   display: block;
+   width: 350px;
+   height: 430px;
+}
+
+.visit-places__name {
+   position: absolute;
+   width: 215px;
+   bottom: 0;
+   left: 50%;
+   @include reset;
+   padding: 16px 0 22px;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+   letter-spacing: -0.415px;
+   color: $text;
+   background-color: #ffffff;
+   transform: translateX(-50%);
+}
+
+.visit-places__link {
+   display: none;
+   position: absolute;
+   padding: 25px 30px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #ffffff;
+   border: 1px solid #ffffff;
+}
