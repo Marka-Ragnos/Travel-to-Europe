@@ -2,7 +2,7 @@
    z-index: 1;
    position: relative;
    margin-bottom: 240px;
-   padding: 0 19.53%;
+   padding: 0 19.65%;
 
    &::before {
       z-index: -1;
@@ -17,79 +17,139 @@
    }
 }
 .countries__buttons {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin-bottom: 80px;
+   white-space: nowrap;
+   overflow: auto;
 }
 
 .countries__btn {
-}
+   @include buttton-reset;
+   padding-left: 8.6%;
+   padding-bottom: 15px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: -0.415px;
+   color: rgba(44, 46, 63, 0.3);
+   outline: none;
+   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 
-.countries__btn--active {
-}
+   &--active {
+      color: $button;
+   }
 
-.countries__btn--greece {
-}
+   &:first-of-type {
+      padding-left: 0;
+   }
 
-.countries__btn--albany {
-}
-
-.countries__btn--macedonia {
-}
-
-.countries__btn--montenegro {
-}
-
-.countries__btn--croatia {
+   &:hover {
+      color: $button-hover;
+      cursor: pointer;
+   }
 }
 
 .countries__item {
+   position: relative;
+   display: none;
+   min-height: 596px;
+   justify-content: flex-start;
+   align-items: flex-start;
+   white-space: normal;
+
+   &--active {
+      display: flex;
+   }
 }
 
 .countries__item--active {
 }
 
-.countries__item--greece {
-}
-
 .countries__wrapper {
+   max-width: 32%;
+   margin-right: 100px;
 }
 
 .countries__title {
+   @include reset;
+   margin-bottom: 32px;
+   padding-top: 10px;
+   padding-bottom: 17px;
+   font-weight: 600;
+   font-size: 55px;
+   line-height: 90px;
+   letter-spacing: -1.245px;
+   color: $text;
+   background-image: url("../img/countries-divider.svg");
+   background-repeat: no-repeat;
+   background-position: left bottom;
 }
 
 .countries__text {
-}
-
-.countries__btn-buy {
+   @include reset;
+   margin-bottom: 48px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+   letter-spacing: -0.466667px;
+   color: rgba(44, 46, 63, 0.7);
 }
 
 .countries__image {
 }
 
 .countries__reviews {
+   position: absolute;
+   right: -16px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 382px;
+   padding: 30px;
+   background-color: #ffffff;
 }
 
 .countries__reviews-title {
+   @include reset;
+   margin-bottom: 19px;
+   padding-bottom: 14px;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 37px;
+   letter-spacing: -0.691667px;
+   color: $text;
+   background-image: url("../img/reviews-divider.svg");
+   background-repeat: no-repeat;
+   background-position: left bottom;
 }
 
 .countries__reviews-text {
+   @include reset;
+   margin-bottom: 30px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 28px;
+   letter-spacing: -0.408333px;
+   color: rgba(44, 46, 63, 0.7);
 }
 
 .countries__author {
+   display: flex;
+   align-items: center;
 }
 
 .countries__author-image {
+   margin-right: 16px;
+   vertical-align: middle;
 }
 
 .countries__author-name {
-}
-
-.countries__item--albany {
-}
-
-.countries__item--macedonia {
-}
-
-.countries__item--montenegrin {
-}
-
-.countries__item--croatia {
+   padding-top: 10px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.466667px;
+   color: $text;
 }
