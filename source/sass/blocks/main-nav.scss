@@ -15,7 +15,7 @@
 }
 
 .main-nav__link {
-   @include montserrat-medium;
+   font-weight: 500;
    font-size: 14px;
    line-height: 17px;
    text-align: center;
@@ -30,7 +30,7 @@
 .main-nav__phone-link {
    display: flex;
    flex-wrap: wrap;
-   @include montserrat-regular;
+   font-weight: 400;
    font-size: 18px;
    line-height: 32px;
    text-align: center;
