@@ -1,7 +1,7 @@
 .countries {
    z-index: 1;
    position: relative;
-   margin-bottom: 240px;
+   margin-bottom: 234px;
    padding: 0 19.65%;
 
    &::before {
@@ -10,12 +10,13 @@
       width: 75%;
       height: 1088px;
       left: 12.5%;
-      top: 12%;
+      top: 19%;
       background-image: url("../img/map.svg");
       background-repeat: no-repeat;
       background-size: cover;
    }
 }
+
 .countries__buttons {
    display: flex;
    flex-direction: row;
@@ -107,7 +108,7 @@
    top: 50%;
    transform: translateY(-50%);
    width: 382px;
-   padding: 30px;
+   padding: 19px 30px 30px;
    background-color: #ffffff;
 }
 

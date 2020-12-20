@@ -1,0 +1,20 @@
+.corporate-travel {
+   width: 32.14%;
+   padding-left: 60px;
+   border-left: 1px solid #d7d9df;
+}
+.corporate-travel__title {
+   @include reset;
+   margin-bottom: 20px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 32px;
+   color: $text-dark;
+}
+
+.corporate-travel__note {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   color: rgba(20, 21, 23, 0.5);
+}

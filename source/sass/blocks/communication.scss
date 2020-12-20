@@ -1,0 +1,52 @@
+.communication {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 455px;
+   margin: 0 auto 170px;
+   padding: 0 20.156% 0 18.9%;
+   color: $text-dark;
+   background-repeat: no-repeat;
+   background-size: 844px 455px;
+   background-position: 36.456% 0;
+}
+
+.webp .communication {
+   background-image: url("../img/communication@1x.webp");
+
+   @include retina {
+      background-image: url("../img/communication@2x.webp");
+   }
+}
+
+.no-webp .communication {
+   background-image: url("../img/communication@1x.jpg");
+
+   @include retina {
+      background-image: url("../img/communication@2x.jpg");
+   }
+}
+
+.communication__form {
+}
+
+.communication__question {
+   @include reset;
+   margin-bottom: 11px;
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 32px;
+   letter-spacing: normal;
+}
+
+.communication__proposal {
+   @include reset;
+   margin-bottom: 24px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: normal;
+}
+
+.communication__error-message {
+}

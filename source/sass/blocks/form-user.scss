@@ -1,0 +1,124 @@
+.form-user {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 656px;
+   padding: 48px;
+   margin: -39px;
+   background-color: #ffffff;
+
+   &--modal {
+      width: 390px;
+      min-height: 444px;
+      padding: 0;
+      padding-top: 72px;
+      padding-bottom: 89px;
+   }
+}
+.form-user__fields {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-bottom: 29px;
+
+   &--modal {
+      flex-direction: column;
+      align-items: center;
+      @include reset;
+   }
+}
+
+.form-user__label {
+   position: relative;
+   text-align: center;
+   width: 269px;
+
+   &--phone {
+      margin-right: auto;
+
+      &::before {
+         @include pseudo;
+         width: 6px;
+         height: 27px;
+         left: 15px;
+         top: 7px;
+         background-image: url("../img/required.svg");
+         background-repeat: no-repeat;
+         background-size: 6px 27px;
+         background-position: center;
+      }
+
+      &::after {
+         @include pseudo;
+         width: 16px;
+         height: 10px;
+         left: 26px;
+         top: 18px;
+         background-image: url("../img/7.svg");
+         background-repeat: no-repeat;
+         background-size: 16px 17px;
+         background-position: center;
+      }
+   }
+
+   &--modal {
+      width: auto;
+      margin-bottom: 20px;
+      margin-right: 0;
+   }
+}
+
+.form-user__input {
+   display: inline-block;
+   width: 100%;
+   @include reset;
+   padding: 15px;
+   font-family: inherit;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+
+   &:valid {
+      border: 1px solid #000000;
+   }
+
+   &:invalid,
+   &:invalid:focus {
+      border: 1px solid $button;
+
+      & + .form-user__error-message {
+         display: block;
+      }
+   }
+
+   &--modal {
+      width: 270px;
+   }
+
+   &--phone {
+      padding-left: 48px;
+   }
+}
+
+.form-user__error-message {
+   display: none;
+   position: absolute;
+   top: -15px;
+   left: 0;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   color: $button;
+}
+
+.form-user__btn-submit {
+   display: block;
+   padding: 18px 39px;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+}

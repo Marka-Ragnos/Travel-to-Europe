@@ -22,7 +22,7 @@
 .visit-places__description {
    width: 330px;
    @include reset;
-   margin-bottom: 54px;
+   margin-bottom: 53px;
    margin-left: 19.65%;
    font-weight: 400;
    font-size: 16px;
@@ -42,12 +42,11 @@
 }
 
 .visit-places__item {
-   // margin: 0;
    margin-right: 60px;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 100px;
+   margin-bottom: 101px;
    position: relative;
 
    &:last-child {
@@ -75,7 +74,6 @@
    display: block;
    width: 350px;
    height: 430px;
-   vertical-align: middle;
 }
 
 .visit-places__name {

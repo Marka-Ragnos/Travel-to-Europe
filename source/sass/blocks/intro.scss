@@ -6,15 +6,27 @@
    padding-bottom: 297px;
    padding-left: 56.5%;
    color: #ffffff;
-   background-image: url("../img/main-bg-desktop@1x.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    // background-position: top center;
+}
+
+.webp .intro {
+   background-image: url("../img/main-bg-desktop@1x.webp");
 
    @include retina {
-      background-image: url("../img/main-bg-desktop@2x.jpg");
+   background-image: url("../img/main-bg-desktop@2x.webp");
    }
 }
+
+.no-webp .intro {
+   background-image: url("../img/main-bg-desktop@1x.jpg");
+
+   @include retina {
+   background-image: url("../img/main-bg-desktop@2x.jpg");
+   }
+}
+
 .intro__title {
    width: 412px;
    @include reset;
