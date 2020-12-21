@@ -68,12 +68,25 @@
    height: 22px;
    top: 20px;
    right: 20px;
-   background: url("../img/icon-close.svg") no-repeat;
+   background: url("../img/close.svg") no-repeat;
    background-size: 22px 22px;
    background-position: center;
    border: none;
 
    &:hover {
       cursor: pointer;
+   }
+}
+
+@include media-tablet {
+   .modal-user {
+      width: 320px;
+      min-height: 568px;
+      text-align: center;
+      background: none;
+   }
+
+   .modal-user__form {
+      margin-left: 0;
    }
 }
