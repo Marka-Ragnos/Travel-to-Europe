@@ -1,8 +1,13 @@
-.logo {
-}
+@include media-tablet {
+   .logo {
+      margin-top: 8px;
+      margin-left: 21px;
+   }
+   .logo__link {
+   }
 
-.logo__link {
-}
-
-.logo__image {
+   .logo__image {
+      width: 44px;
+      height: 17px;
+   }
 }

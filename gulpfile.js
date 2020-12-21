@@ -81,10 +81,10 @@ const images = () => {
          imagemin([
             imagemin.mozjpeg({ quality: 75, progressive: true }),
             imagemin.optipng({ optimizationLevel: 3 }),
-            // imagemin.svgo({
-            //    plugins: [{ removeViewBox: false }],
-            // }),
-            imagemin.svgo(),
+            imagemin.svgo({
+               plugins: [{ removeViewBox: false }],
+            }),
+            // imagemin.svgo(),
          ])
       )
       .pipe(gulp.dest("source/img"));

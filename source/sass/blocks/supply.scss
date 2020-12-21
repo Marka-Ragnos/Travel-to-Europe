@@ -52,7 +52,7 @@
    font-size: 20px;
    line-height: 32px;
    color: #000000;
-   letter-spacing: .04px;
+   letter-spacing: 0.04px;
    text-decoration: none;
    &:hover {
       color: $button;
@@ -182,4 +182,135 @@
 
 .supply__btn {
    margin-top: auto;
+}
+
+@include media-tablet {
+   .supply {
+      flex-direction: column;
+      align-items: center;
+      @include reset;
+      margin: 0 auto 125px;
+   }
+
+   .supply__profile {
+      @include reset;
+      order: 0;
+      width: 100%;
+   }
+
+   .supply__title {
+      @include reset;
+      margin-bottom: 20px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 45px;
+      background-image: none;
+   }
+
+   .supply__description {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 0 21px;
+      text-align: center;
+   }
+
+   .supply__connection {
+      margin-bottom: 10px;
+      font-size: 18px;
+   }
+
+   .supply__phone {
+      display: block;
+      margin-bottom: 30px;
+      padding-left: 0;
+      text-align: center;
+      letter-spacing: -0.1px;
+      font-size: 18px;
+      color: $button;
+      background-image: none;
+   }
+
+   .supply__list {
+      @include reset;
+   }
+
+   .supply__item {
+      width: 288px;
+      align-items: center;
+      margin-bottom: 4px;
+      padding: 30px 0 0 0;
+
+      &:hover {
+         outline: 3px solid $button;
+
+         & .supply__item-title {
+            margin-bottom: 12px;
+            padding-top: 2px;
+         }
+
+         .supply__item-memo {
+            margin-bottom: 10px;
+         }
+
+         & .supply__content-list {
+            padding-top: 20px;
+         }
+      }
+   }
+
+   .supply__item:not(:last-child) {
+      margin-right: 50px;
+   }
+
+   .supply__wrapper-title {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   .supply__item-title {
+      @include reset;
+      margin-bottom: 10px;
+      font-size: 24px;
+   }
+
+   .supply__item-price {
+      margin-left: 0;
+      margin-bottom: 11px;
+   }
+
+   .supply__item-memo {
+      @include reset;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 90%;
+   }
+
+   .supply__content-list {
+      @include reset;
+      margin-bottom: 30px;
+      margin-right: 20px;
+      margin-left: 20px;
+      padding: 20px 0 0;
+   }
+
+   .supply__content-item {
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   .supply__content-check {
+      width: 22px;
+      height: 22px;
+   }
+
+   .supply__btn {
+      width: 100%;
+      margin-top: auto;
+      padding: 19px 41px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+   }
 }

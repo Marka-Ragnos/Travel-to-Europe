@@ -100,6 +100,8 @@
 }
 
 .countries__image {
+   // width: 430px;
+   // height: 596px;
 }
 
 .countries__reviews {
@@ -153,4 +155,84 @@
    line-height: 24px;
    letter-spacing: -0.466667px;
    color: $text;
+}
+
+@include media-tablet {
+   .countries {
+      @include reset;
+      margin-bottom: 80px;
+
+      &::before {
+         background-image: none;
+      }
+   }
+
+   .countries__buttons {
+      margin-bottom: 33px;
+      padding-right: 25px;
+      padding-left: 37px;
+   }
+
+   .countries__btn {
+      padding-left: 99px;
+   }
+
+   .countries__item {
+      width: 100%;
+      @include reset;
+      padding-bottom: 32px;
+      flex-direction: column;
+      align-items: center;
+
+      & > picture {
+         width: 100%;
+      }
+   }
+
+   .countries__wrapper {
+      max-width: 100%;
+      margin-bottom: 29px;
+      margin-right: 0;
+   }
+
+   .countries__title {
+      @include reset;
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+      background-image: none;
+   }
+
+   .countries__text {
+      width: 100%;
+      @include reset;
+      margin-bottom: 20px;
+      padding: 0 2.73%;
+      text-align: center;
+   }
+
+   .countries__btn-buy {
+      display: block;
+      margin: 0 auto;
+      padding: 19px 51px;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 2px;
+   }
+
+   .countries__image {
+      width: 100%;
+      height: 415px;
+   }
+
+   .countries__reviews {
+      right: auto;
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 382px;
+      padding: 29px 30px 36px;
+   }
 }

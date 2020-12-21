@@ -22,8 +22,9 @@
    .page-header {
       position: relative;
       width: 100%;
+      min-height: 50px;
       @include reset;
-      padding-top: 50px;
+      // padding-top: 50px;
       // background: #ffffff;
 
       &--menu-open .page-header__toggle {
@@ -56,7 +57,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 50px;
+      width: 72px;
       height: 50px;
       z-index: 20;
       border: none;
