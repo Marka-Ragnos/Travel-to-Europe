@@ -342,6 +342,7 @@
 
    .supply__connection {
       margin-bottom: 10px;
+      letter-spacing: normal;
    }
 
    .supply__phone {
@@ -356,8 +357,16 @@
       width: 288px;
    }
 
+   .supply__item-title {
+      margin-bottom: 8px;
+   }
    .supply__item:not(:last-child) {
       margin-right: 0;
       margin-bottom: 30px;
    }
+
+   .supply__content-list {
+      margin-bottom: 24px;
+   }
+
 }

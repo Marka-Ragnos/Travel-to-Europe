@@ -67,7 +67,14 @@
       justify-content: center;
       align-items: flex-start;
       @include reset;
-      margin: 0 auto 70px;
+      margin: 0 auto 56px;
+   }
+
+   .webp .communication {
+      background-image: none;
+   }
+
+   .no-webp .communication {
       background-image: none;
    }
 

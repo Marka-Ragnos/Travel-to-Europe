@@ -168,6 +168,7 @@
 
 @include media-mobile {
    .form-user {
+      margin: 0 1px;
       padding: 50px 16px;
       background-color: #fbf8f8;
    }
@@ -181,5 +182,12 @@
       width: 288px;
       @include reset;
       margin-bottom: 20px;
+      &:last-of-type {
+         margin-bottom: 0;
+      }
+   }
+   .form-user__btn-submit {
+      width: 288px;
+      padding-top: 18px;
    }
 }

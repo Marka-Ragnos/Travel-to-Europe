@@ -54,3 +54,41 @@
       margin-bottom: 10px;
    }
 }
+
+@include media-mobile {
+   .next-ways {
+      width: 100%;
+      @include reset;
+      margin-bottom: 29px;
+      padding-bottom: 7px;
+      border-right: none;
+      border-bottom: 1px solid #d7d9df;
+   }
+
+   .next-ways__title {
+      text-align: center;
+   }
+
+   .next-ways__list {
+      width: 100%;
+      justify-content: center;
+   }
+
+   .next-ways__item {
+      width: 50%;
+      text-align: center;
+      &:last-of-type {
+         margin-bottom: 0;
+      }
+   }
+
+   .next-ways__link {
+      align-items: center;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(20, 21, 23, 0.5);
+   }
+}

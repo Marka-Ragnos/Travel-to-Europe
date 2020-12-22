@@ -262,10 +262,14 @@
       @include reset;
       padding-bottom: 66px;
       // background-position: center bottom 66px;
+      & > picture {
+         display: flex;
+      }
    }
 
    .countries__wrapper {
       max-width: 100%;
+      margin-bottom: 48px;
    }
 
    .countries__title {
@@ -294,7 +298,7 @@
    .countries__reviews {
       bottom: 0;
       left: 50%;
-      padding: 30px 20px;
+      padding: 32px 20px 30px;
       transform: translatex(-50%);
       width: 268px;
    }
@@ -312,7 +316,7 @@
 
    .countries__reviews-title {
       @include reset;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       padding-bottom: 10px;
       text-align: center;
       font-size: 20px;
@@ -323,7 +327,7 @@
 
    .countries__reviews-text {
       @include reset;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       text-align: center;
    }
 
@@ -337,6 +341,7 @@
    .countries__author-name {
       // font-family: "Poppins", "arial", sans-serif;
       // font-style: normal;
+      padding-top: 0;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;

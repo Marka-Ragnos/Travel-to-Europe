@@ -189,6 +189,8 @@
       width: 100%;
       @include reset;
       margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
    }
 
    .visit-places__list {
@@ -196,17 +198,20 @@
       flex-direction: column;
       justify-content: flex-start;
       @include reset;
-      margin: 0 auto 88px;
+      margin: 0 auto 41px;
    }
 
    .visit-places__item {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 69px;
-      position: relative;
+      margin-left: 0px;
 
+      margin-bottom: 35px;
+      position: relative;
+// object-position: ;
       &:last-child {
+         margin-left: 0;
          margin-bottom: 0;
       }
    }

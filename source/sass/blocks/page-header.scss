@@ -69,3 +69,9 @@
       background-color: $button;
    }
 }
+
+@include media-mobile {
+      .page-header__toggle {
+      width: 50px;
+      }
+}
