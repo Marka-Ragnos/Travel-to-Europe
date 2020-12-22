@@ -61,3 +61,23 @@
       background-position: center;
    }
 }
+
+@include media-mobile {
+   .communication {
+      justify-content: center;
+      align-items: flex-start;
+      @include reset;
+      margin: 0 auto 70px;
+      background-image: none;
+   }
+
+   .communication__question {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+
+   .communication__proposal {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+}

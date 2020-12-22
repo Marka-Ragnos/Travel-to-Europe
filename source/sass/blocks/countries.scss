@@ -56,6 +56,7 @@
 .countries__item {
    position: relative;
    display: none;
+   // height: 100%;
    min-height: 596px;
    justify-content: flex-start;
    align-items: flex-start;
@@ -64,6 +65,9 @@
    &--active {
       display: flex;
    }
+   // & > picture {
+   //    margin-top: auto;
+   // }
 }
 
 .countries__item--active {
@@ -100,6 +104,7 @@
 }
 
 .countries__image {
+   // object-fit: cover;
    // width: 430px;
    // height: 596px;
 }
@@ -235,5 +240,107 @@
       transform: translateX(-50%);
       width: 382px;
       padding: 29px 30px 36px;
+   }
+}
+
+@include media-mobile {
+   .countries {
+      @include reset;
+      margin-bottom: 45px;
+   }
+
+   .countries__buttons {
+      margin-bottom: 24px;
+      padding-left: 16px;
+   }
+
+   .countries__btn {
+      padding-left: 100px;
+   }
+
+   .countries__item {
+      @include reset;
+      padding-bottom: 66px;
+      // background-position: center bottom 66px;
+   }
+
+   .countries__wrapper {
+      max-width: 100%;
+   }
+
+   .countries__title {
+      @include reset;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 36px;
+   }
+
+   .countries__text {
+      width: 100%;
+      @include reset;
+      margin-bottom: 20px;
+      padding: 0 16px;
+      text-align: center;
+   }
+
+   .countries__btn-buy {
+      width: 288px;
+      padding: 19px 53px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+   }
+
+   .countries__reviews {
+      bottom: 0;
+      left: 50%;
+      padding: 30px 20px;
+      transform: translatex(-50%);
+      width: 268px;
+   }
+
+   .countries__author {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .countries__author-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+
+   .countries__reviews-title {
+      @include reset;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.408333px;
+      background-position: center bottom;
+   }
+
+   .countries__reviews-text {
+      @include reset;
+      margin-bottom: 20px;
+      text-align: center;
+   }
+
+   .countries__author-image {
+      display: block;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+   }
+
+   .countries__author-name {
+      // font-family: "Poppins", "arial", sans-serif;
+      // font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.466667px;
+      color: $text;
    }
 }

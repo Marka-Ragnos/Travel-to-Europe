@@ -320,3 +320,44 @@
       line-height: 12px;
    }
 }
+
+@include media-mobile {
+   .supply {
+      @include reset;
+      margin: 0 auto 50px;
+   }
+
+   .supply__title {
+      @include reset;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 36px;
+   }
+
+   .supply__description {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 0 16px;
+   }
+
+   .supply__connection {
+      margin-bottom: 10px;
+   }
+
+   .supply__phone {
+      margin-bottom: 40px;
+   }
+
+   .supply__list {
+      flex-direction: column;
+   }
+
+   .supply__item {
+      width: 288px;
+   }
+
+   .supply__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+   }
+}
