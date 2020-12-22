@@ -11,3 +11,9 @@
       height: 17px;
    }
 }
+
+@include media-mobile {
+   .logo {
+      margin-left: 16px;
+   }
+}

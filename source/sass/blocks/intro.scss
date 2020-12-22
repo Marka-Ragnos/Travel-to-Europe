@@ -63,7 +63,6 @@
       @include reset;
       display: flex;
       min-height: 344px;
-
       flex-direction: column;
       align-items: center;
       margin-bottom: 80px;
@@ -115,6 +114,13 @@
       align-items: center;
       margin-bottom: 108px;
       padding-top: 0;
+   }
+
+   .webp .intro {
+      background-image: none;
+   }
+
+   .no-webp .intro {
       background-image: none;
    }
 
@@ -125,42 +131,47 @@
       padding: 82px 20px;
       font-size: 24px;
       line-height: 36px;
-      mix-blend-mode: normal;
+      text-align: center;
+      letter-spacing: normal;
+      // mix-blend-mode: normal;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
+   }
 
-      .webp .intro__title {
-         background-image: url("../img/main-bg-mobile@1x.webp");
+   .webp .intro__title {
+      background-image: url("../img/main-bg-mobile@1x.webp");
 
-         @include retina {
-            background-image: url("../img/main-bg-mobile@2x.webp");
-         }
+      @include retina {
+         background-image: url("../img/main-bg-mobile@2x.webp");
       }
+   }
 
-      .no-webp .intro__title {
-         background-image: url("../img/main-bg-mobile@1x.jpg");
+   .no-webp .intro__title {
+      background-image: url("../img/main-bg-mobile@1x.jpg");
 
-         @include retina {
-            background-image: url("../img/main-bg-mobile@2x.jpg");
-         }
+      @include retina {
+         background-image: url("../img/main-bg-mobile@2x.jpg");
       }
+   }
+   .intro__description {
+      width: 100%;
+      @include reset;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      color: $text;
+   }
 
-      .intro_description {
-         width: 100%;
-         @include reset;
-         margin-bottom: 20px;
-         padding: 0 10px;
-         color: $text;
-      }
+   .intro__link {
+      width: 287px;
+      padding: 17px 40px;
+   }
 
-      .intro__link {
-         width: 288px;
-         padding: 19px 40px;
-      }
-
-      .intro__link-name {
-         padding-right: 67px;
-      }
+   .intro__link-name {
+      padding-right: 101px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 2px;
    }
 }

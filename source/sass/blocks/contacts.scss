@@ -76,9 +76,9 @@
          margin-bottom: 17px;
       }
       &--phone {
-      padding-top: 0px;
-      background-position: 0 -4px;
-      letter-spacing: normal;
+         padding-top: 0px;
+         background-position: 0 -4px;
+         letter-spacing: normal;
       }
    }
 
@@ -89,6 +89,53 @@
    .contacts__link-name {
       display: block;
       padding-top: 2px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      color: $button;
+   }
+}
+
+@include media-mobile {
+   .contacts {
+      align-items: center;
+      width: 100%;
+      min-width: 230px;
+      @include reset;
+   }
+
+   .contacts__title {
+      letter-spacing: normal;
+   }
+
+   .contacts__link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+
+      &--email {
+         margin-bottom: 18px;
+         font-size: 16px;
+         line-height: 17px;
+      }
+
+      &--phone {
+         padding-top: 5px;
+         background-position: 0 -2px;
+      }
+   }
+
+   .contacts__link-email {
+      display: none;
+   }
+
+   // .contacts__link-email {
+   //    display: none;
+   // }
+
+   .contacts__link-name {
+      display: block;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
