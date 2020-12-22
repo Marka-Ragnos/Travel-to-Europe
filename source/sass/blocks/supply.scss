@@ -233,6 +233,7 @@
    .supply__phone-image {
       display: none;
    }
+
    .supply__list {
       @include reset;
    }
@@ -240,7 +241,6 @@
    .supply__item {
       width: 288px;
       align-items: center;
-      // margin-bottom: 4px;
       padding: 28px 0 0 0;
 
       &:hover {
@@ -368,5 +368,39 @@
    .supply__content-list {
       margin-bottom: 24px;
    }
+}
 
+@include media-transitional {
+   .supply {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include reset;
+      margin: 0 auto 118px;
+   }
+
+   .supply__profile {
+      width: 50%;
+      padding-top: 0;
+      order: 0;
+      text-align: center;
+   }
+
+   .supply__list {
+      @include reset;
+   }
+
+   .supply__title {
+      @include reset;
+      margin-bottom: 20px;
+      font-size: 50px;
+      text-align: center;
+      line-height: 45px;
+      padding-bottom: 20px;
+      background-position: bottom;
+   }
+
+   .supply__phone {
+      display: block;
+   }
 }
