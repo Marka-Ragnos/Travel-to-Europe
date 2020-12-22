@@ -50,3 +50,14 @@
 
 .communication__error-message {
 }
+
+@include media-tablet {
+   .communication {
+      justify-content: center;
+      @include reset;
+      margin: 0 auto 80px;
+      color: $text-dark;
+      background-size: 100% 455px;
+      background-position: center;
+   }
+}

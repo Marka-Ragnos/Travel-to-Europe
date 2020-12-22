@@ -40,3 +40,17 @@
    letter-spacing: normal;
    color: rgba(20, 21, 23, 0.5);
 }
+
+@include media-tablet {
+   .next-ways {
+      width: 54.4%;
+      min-width: 250px;
+      padding-right: 20px;
+   }
+   .next-ways__title {
+      margin: 0 0 23px;
+   }
+   .next-ways__item {
+      margin-bottom: 10px;
+   }
+}

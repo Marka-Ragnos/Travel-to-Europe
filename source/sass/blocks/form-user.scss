@@ -7,6 +7,7 @@
    padding: 48px;
    margin: -39px;
    background-color: #ffffff;
+   border-radius: 5px;
 
    &--modal {
       width: 390px;
@@ -121,4 +122,46 @@
    font-weight: 700;
    font-size: 12px;
    line-height: 15px;
+}
+
+@include media-tablet {
+   .form-user {
+      &--modal {
+         width: 100%;
+         padding: 100px 16px 185px;
+      }
+   }
+
+   .form-user__fields {
+      margin-bottom: 22px;
+
+      &--modal {
+         flex-direction: column;
+         align-items: center;
+         @include reset;
+      }
+   }
+
+   .form-user__label {
+      &--modal {
+         width: 288px;
+         margin-bottom: 20px;
+      }
+   }
+
+   .form-user__input {
+      &--modal {
+         width: 100%;
+      }
+   }
+
+   .form-user__btn-submit {
+      width: 250px;
+      font-weight: 500;
+      padding-top: 20px;
+      padding-bottom: 19px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+   }
 }

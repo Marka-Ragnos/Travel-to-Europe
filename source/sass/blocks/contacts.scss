@@ -56,3 +56,43 @@
 
 .contacts__link--phone {
 }
+
+@include media-tablet {
+   .contacts {
+      width: 45.59%;
+      min-width: 230px;
+      padding-left: 6.89%;
+   }
+
+   .contacts__title {
+      letter-spacing: normal;
+   }
+
+   .contacts__link {
+      font-size: 16px;
+      line-height: 32px;
+
+      &--email {
+         margin-bottom: 17px;
+      }
+      &--phone {
+      padding-top: 0px;
+      background-position: 0 -4px;
+      letter-spacing: normal;
+      }
+   }
+
+   .contacts__link-email {
+      display: none;
+   }
+
+   .contacts__link-name {
+      display: block;
+      padding-top: 2px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      color: $button;
+   }
+}

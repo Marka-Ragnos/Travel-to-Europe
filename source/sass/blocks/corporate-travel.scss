@@ -18,3 +18,16 @@
    line-height: 24px;
    color: rgba(20, 21, 23, 0.5);
 }
+
+@include media-tablet {
+   .corporate-travel {
+      width: 100%;
+      @include reset;
+      margin-top: 7px;
+      padding-top: 30px;
+      text-align: center;
+      letter-spacing: normal;
+      border-left: none;
+      border-top: 1px solid #d7d9df;
+   }
+}

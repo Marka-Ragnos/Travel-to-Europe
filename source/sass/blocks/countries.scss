@@ -160,7 +160,7 @@
 @include media-tablet {
    .countries {
       @include reset;
-      margin-bottom: 80px;
+      margin-bottom: 76px;
 
       &::before {
          background-image: none;
@@ -200,6 +200,7 @@
       margin-bottom: 20px;
       font-size: 30px;
       line-height: 45px;
+      letter-spacing: normal;
       text-align: center;
       background-image: none;
    }
