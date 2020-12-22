@@ -22,7 +22,7 @@
 .visit-places__description {
    width: 330px;
    @include reset;
-   margin-bottom: 54px;
+   margin-bottom: 53px;
    margin-left: 19.65%;
    font-weight: 400;
    font-size: 16px;
@@ -42,12 +42,11 @@
 }
 
 .visit-places__item {
-   // margin: 0;
    margin-right: 60px;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 100px;
+   margin-bottom: 101px;
    position: relative;
 
    &:last-child {
@@ -75,7 +74,6 @@
    display: block;
    width: 350px;
    height: 430px;
-   vertical-align: middle;
 }
 
 .visit-places__name {
@@ -109,4 +107,112 @@
    text-decoration: none;
    color: #ffffff;
    border: 1px solid #ffffff;
+}
+
+@include media-tablet {
+   .visit-places {
+      @include reset;
+   }
+
+   .visit-places__title {
+      width: auto;
+      @include reset;
+      margin-bottom: 21px;
+      // padding-left: 20px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 45px;
+      letter-spacing: normal;
+      text-align: center;
+      background-image: none;
+   }
+
+   .visit-places__description {
+      max-width: 345px;
+      @include reset;
+      margin: 0 auto 40px;
+      text-align: center;
+      letter-spacing: -0.466667px;
+   }
+
+   .visit-places__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @include reset;
+      margin-left: -29px;
+      margin-bottom: 93px;
+      // margin-left: auto;
+      // margin-right: auto;
+      // margin-left: 6.547%;
+      // margin-right: 6.547%;
+      // list-style: none;
+   }
+
+   .visit-places__item {
+      @include reset;
+      margin-left: 29px;
+      margin-bottom: 18px;
+
+      &:last-child {
+         margin-left: 29px;
+      }
+
+      // & + & {
+      //    margin-left: 29px;
+      // }
+   }
+
+   .visit-places__name {
+      padding: 17px 0 15px;
+   }
+   .visit-places__image {
+      width: 288px;
+      height: 425px;
+   }
+}
+
+@include media-mobile {
+   .visit-places__title {
+      width: 360px;
+      @include reset;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 36px;
+   }
+
+   .visit-places__title {
+      width: 100%;
+   }
+
+   .visit-places__description {
+      width: 100%;
+      @include reset;
+      margin-bottom: 20px;
+   }
+
+   .visit-places__list {
+      width: 288px;
+      flex-direction: column;
+      justify-content: flex-start;
+      @include reset;
+      margin: 0 auto 88px;
+   }
+
+   .visit-places__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 69px;
+      position: relative;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+
+   .visit-places__image {
+      width: 288px;
+      height: 425px;
+   }
 }

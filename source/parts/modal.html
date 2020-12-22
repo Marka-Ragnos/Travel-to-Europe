@@ -1,0 +1,31 @@
+<div class="modal-overlay"></div>
+<section class="modal-user">
+   <h2 class="visually-hidden">Форма обратной связи</h2>
+   <form class="modal-user__form form-user form-user--modal" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="modal-user__title">Купить тур</p>
+      <button class="modal-user__btn-close" type="button" aria-label="Закрыть форму"></button>
+      <div class="form-user__fields form-user__fields--modal">
+         <label class="form-user__label form-user__label--modal form-user__label--phone">
+            <input class="form-user__input form-user__input--modal form-user__input--phone" type="text" name="phone" placeholder="Введите 10 цифр номера" title="Введите 10 цифр номера (обязательное поле)" pattern="[0-9]{10}" />
+            <span class="modal-user__error form-user__error-message">
+               Данные не верны
+            </span>
+         </label>
+         <label class="form-user__label form-user__label--modal form-user__label--email">
+            <input class="form-user__input form-user__input--modal form-user__input--email" type="email" name="email" placeholder="E-mail" title="Введите Ваш e-mail" />
+            <span class="modal-user__error form-user__error-message">
+               Данные не верны
+            </span>
+         </label>
+      </div>
+      <button class="form-user__btn-submit button" type="submit">
+         отправить
+      </button>
+   </form>
+</section>
+
+<section class="modal-message">
+   <h2 class="visually-hidden">Сообщение об успешной отправке</h2>
+   <p class="modal-message__title">Форма успешно отправлена, спасибо!:)</p>
+   <button class="modal-message__btn-close" type="button" aria-label="Закрыть форму"></button>
+</section>

@@ -17,3 +17,55 @@
 .page-header__nav {
    display: flex;
 }
+
+@include media-tablet {
+   .page-header {
+      position: relative;
+      width: 100%;
+      min-height: 50px;
+      @include reset;
+      // padding-top: 50px;
+      // background: #ffffff;
+
+      &--menu-open .page-header__toggle {
+         background-image: url("../img/x.svg");
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: 50px 52px;
+         background-color: #ffffff;
+      }
+
+      & .page-header__nav {
+         display: none;
+      }
+
+      &--menu-open .page-header__nav {
+         display: flex;
+      }
+
+      &--nojs {
+         position: static;
+      }
+
+      &--nojs .page-header__toggle {
+         display: none;
+      }
+   }
+
+   .page-header__toggle {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 72px;
+      height: 50px;
+      z-index: 20;
+      border: none;
+      cursor: pointer;
+      background-image: url("../img/burger.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 30px 30px;
+      background-color: $button;
+   }
+}

@@ -53,3 +53,53 @@
       stroke: $button;
    }
 }
+
+@include media-tablet {
+   .main-nav {
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      @include reset;
+      padding-top: 134px;
+      padding-bottom: 234px;
+      background: #ffffff;
+   }
+
+   .main-nav__list {
+      width: 100%;
+      @include reset;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .main-nav__item {
+      width: 100%;
+      background-color: #fbf8f8;
+   }
+
+   .main-nav__item:not(:last-child) {
+      @include reset;
+      margin-bottom: 30px;
+   }
+
+   .main-nav__link {
+      width: 100%;
+      display: block;
+      padding: 17px 0 17px 16px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: left;
+      color: $text-dark;
+      text-decoration: none;
+      background: url("../img/icon-arrow-down.svg") no-repeat;
+      background-position: 95% center;
+      background-size: 25px 25px;
+   }
+
+   .main-nav__phone {
+      display: none;
+   }
+}
