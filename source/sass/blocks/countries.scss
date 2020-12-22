@@ -1,7 +1,7 @@
 .countries {
    z-index: 1;
    position: relative;
-   margin-bottom: 234px;
+   margin-bottom: 238px;
    padding: 0 19.65%;
 
    &::before {
@@ -339,13 +339,17 @@
    }
 
    .countries__author-name {
-      // font-family: "Poppins", "arial", sans-serif;
-      // font-style: normal;
       padding-top: 0;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.466667px;
       color: $text;
+   }
+}
+
+@include media-transitional {
+   .countries {
+      margin-bottom: 100px;
    }
 }

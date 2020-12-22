@@ -209,7 +209,7 @@
 
       margin-bottom: 35px;
       position: relative;
-// object-position: ;
+
       &:last-child {
          margin-left: 0;
          margin-bottom: 0;
@@ -219,5 +219,13 @@
    .visit-places__image {
       width: 288px;
       height: 425px;
+   }
+}
+
+@include media-transitional {
+   .visit-places__item {
+      &:last-child {
+         margin-left: 0;
+      }
    }
 }
