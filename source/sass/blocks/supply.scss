@@ -76,7 +76,6 @@
    font-weight: 600;
    font-size: 28px;
    line-height: 38px;
-   // letter-spacing: -1.27273px;
    color: rgba(20, 21, 23, 0.7);
 }
 
@@ -95,24 +94,13 @@
       border: 3px solid $button;
 
       & .supply__item-title {
-         // margin-bottom: 39px;
-         // padding-top: 2px;
          line-height: 34px;
-         // letter-spacing: 0.1px;
          color: $button;
       }
-
-      // .supply__item-memo {
-      //    margin-bottom: 26px;
-      // }
 
       & .supply__item-price {
          color: $button;
       }
-
-      // & .supply__content-list {
-      //    padding-top: 31px;
-      // }
 
       & .supply__content-check {
          fill: $text-dark;

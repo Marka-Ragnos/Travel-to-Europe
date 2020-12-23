@@ -56,7 +56,6 @@
 .countries__item {
    position: relative;
    display: none;
-   // height: 100%;
    min-height: 596px;
    justify-content: flex-start;
    align-items: flex-start;
@@ -65,12 +64,6 @@
    &--active {
       display: flex;
    }
-   // & > picture {
-   //    margin-top: auto;
-   // }
-}
-
-.countries__item--active {
 }
 
 .countries__wrapper {
@@ -101,12 +94,6 @@
    line-height: 28px;
    letter-spacing: -0.466667px;
    color: rgba(44, 46, 63, 0.7);
-}
-
-.countries__image {
-   // object-fit: cover;
-   // width: 430px;
-   // height: 596px;
 }
 
 .countries__reviews {
@@ -261,7 +248,6 @@
    .countries__item {
       @include reset;
       padding-bottom: 66px;
-      // background-position: center bottom 66px;
       & > picture {
          display: flex;
       }
