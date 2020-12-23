@@ -6,6 +6,7 @@
    padding-bottom: 297px;
    padding-left: 56.5%;
    color: #ffffff;
+   background-image: url("../img/main-bg-desktop@1x.jpg");
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -19,8 +20,6 @@
 }
 
 .no-webp .intro {
-   background-image: url("../img/main-bg-desktop@1x.jpg");
-
    @include retina {
       background-image: url("../img/main-bg-desktop@2x.jpg");
    }
@@ -69,7 +68,6 @@
    .intro__title {
       width: auto;
       @include reset;
-      // text-align: center;
       margin-bottom: 15px;
       font-size: 30px;
       line-height: 45px;
@@ -110,6 +108,7 @@
       align-items: center;
       margin-bottom: 108px;
       padding-top: 0;
+      background-image: none;
    }
 
    .webp .intro {
@@ -129,7 +128,7 @@
       line-height: 36px;
       text-align: center;
       letter-spacing: normal;
-      // mix-blend-mode: normal;
+      background-image: url("../img/main-bg-mobile@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
