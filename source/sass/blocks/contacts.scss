@@ -44,17 +44,8 @@
    }
 }
 
-.contacts__link--email {
-}
-
-.contacts__link-email {
-}
-
 .contacts__link-name {
    display: none;
-}
-
-.contacts__link--phone {
 }
 
 @include media-tablet {
@@ -129,10 +120,6 @@
    .contacts__link-email {
       display: none;
    }
-
-   // .contacts__link-email {
-   //    display: none;
-   // }
 
    .contacts__link-name {
       display: block;
