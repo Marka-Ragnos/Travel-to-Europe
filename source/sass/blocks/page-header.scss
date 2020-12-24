@@ -22,6 +22,7 @@
       min-height: 50px;
       @include reset;
 
+      &--nojs .page-header__toggle,
       &--menu-open .page-header__toggle {
          background-image: url("../img/x.svg");
          background-repeat: no-repeat;
@@ -34,16 +35,9 @@
          display: none;
       }
 
+      &--nojs .page-header__nav,
       &--menu-open .page-header__nav {
          display: flex;
-      }
-
-      &--nojs {
-         position: static;
-      }
-
-      &--nojs .page-header__toggle {
-         display: none;
       }
    }
 

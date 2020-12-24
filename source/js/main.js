@@ -138,9 +138,9 @@
       pageMain.addEventListener("click", onButtonOpenModalClick);
    }
 
-   window.vendor.tabs(
-      "countries__buttons",
-      "countries__button",
-      "countries__item"
-   );
+   // window.vendor.tabs(
+   //    "countries__buttons",
+   //    "countries__button",
+   //    "countries__item"
+   // );
 })();
