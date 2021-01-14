@@ -138,9 +138,32 @@
       pageMain.addEventListener("click", onButtonOpenModalClick);
    }
 
-   // window.vendor.tabs(
-   //    "countries__buttons",
-   //    "countries__button",
-   //    "countries__item"
-   // );
+   const tabsAll = document.querySelectorAll(".countries__btn");
+   const tabsContetntAll = document.querySelectorAll(".countries__item");
+
+   const onSelectTabs = (evt) => {
+      const targetTab = evt.target;
+      const tabId = targetTab.getAttribute("data-tab");
+      const targetContent = document.getElementById(tabId);
+      // console.log(targetContent);
+      tabsAll.forEach((tab) => {
+         tab.classList.remove("countries__btn--active");
+      });
+      targetTab.classList.add("countries__btn--active");
+      tabsContetntAll.forEach((tab) => {
+         tab.classList.remove("countries__item--active");
+      });
+      targetContent.classList.add("countries__item--active");
+   };
+
+   tabsAll.forEach((tab) => {
+      tab.addEventListener("click", onSelectTabs);
+   });
+
+   // var swiper = new Swiper(".swiper-container", {
+   //    pagination: {
+   //       el: ".swiper-pagination",
+   //       dynamicBullets: true,
+   //    },
+   // });
 })();
